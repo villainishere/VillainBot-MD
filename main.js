@@ -334,5 +334,5 @@ async function _quickTest() {
 
 }
 _quickTest()
-    .then(() => conn.logger.info('☑️ Quick Test Done , nama file session ~> creds.json'))
+    .then(() => conn.logger.info('☑️ Quick Test Done , nama file session ~> villainbot.json'))
     .catch(console.error)
