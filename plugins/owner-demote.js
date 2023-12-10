@@ -1,4 +1,4 @@
-import { areJidsSameUser } from '@queenanya/baileys'
+import { areJidsSameUser } from '@adiwajshing/baileys'
 let handler = async (m, { conn, participants }) => {
     let users = m.mentionedJid.filter(u => !areJidsSameUser(u, conn.user.id))
      let user = m.mentionedJid && m.mentionedJid[0]
