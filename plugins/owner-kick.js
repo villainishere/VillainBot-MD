@@ -1,4 +1,4 @@
-import { areJidsSameUser } from '@queenanya/baileys'
+import { areJidsSameUser } from '@adiwajshing/baileys'
 
 let handler = async (m, { conn, participants, isAdmin }) => {
     if (!isAdmin) {
@@ -13,7 +13,7 @@ let handler = async (m, { conn, participants, isAdmin }) => {
             kickedUser.concat(res)
             await delay(1 * 1000)
         }
-    m.reply(`Papai ${kickedUser.map(v => '@' + v.split('@')[0])}`, null, { mentions: kickedUser })
+    m.reply(`出来 (Chūlái) ${kickedUser.map(v => '@' + v.split('@')[0])}`, null, { mentions: kickedUser })
 }
 
 handler.help = ['kick']
